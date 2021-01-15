@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: logstudent
+logging:
+  config: classpath:logback-spring.xml
+#  屏蔽springboot2自动装载日志  也可以配置到logback-spring.xml中  两个都设置，以logback-spring.xml中的为准
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure:
+            logging: info
